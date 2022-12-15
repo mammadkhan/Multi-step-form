@@ -1,4 +1,25 @@
-$background-color:hsl(217, 100%, 97%);
-$container-background-color:hsl(0, 0%, 100%);
-$text-color:hsl(213, 96%, 18%);
-$border-active:hsl(243, 100%, 62%);
+$background-color: hsl(217, 100%, 97%);
+$container-background-color: hsl(0, 0%, 100%);
+$text-color: hsl(213, 96%, 18%);
+$text-gray: hsl(231, 11%, 63%);
+$border-active: hsl(243, 100%, 62%);
+$outline-color:hsl(354, 84%, 57%);
+$radio-checked-bg:hsl(217, 100%, 97%);
+
+@mixin placeholder-color($color) {
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color;
+    opacity: 1; /* Firefox */
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color;
+  }
+
+  &::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color;
+  }
+}

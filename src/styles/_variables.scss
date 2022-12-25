@@ -5,6 +5,7 @@ $text-gray: hsl(231, 11%, 63%);
 $border-active: hsl(243, 100%, 62%);
 $outline-color:hsl(354, 84%, 57%);
 $radio-checked-bg:hsl(217, 100%, 97%);
+$step-color:hsl(229, 24%, 87%);
 
 @mixin placeholder-color($color) {
   &::placeholder {

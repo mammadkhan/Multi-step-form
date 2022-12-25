@@ -1,3 +1,6 @@
+import type { RootState } from '../state/store'
+import {useSelector} from 'react-redux'
+
 import Status from '../components/Status'
 import First from '../components/First'
 import Second from '../components/Second'
@@ -10,11 +13,15 @@ import '../styles/App.scss'
 
 function App() {
 
+  const pages = [<First/>,<Second/>,<Third/>,<Fourth/>,<Last/>]
+
+  const page = useSelector((state:RootState)=> state.page.page)
+
   return (
     <div className="App">
       <Status />
       <form>
-        <Last />
+          {pages[page]}
       </form>
     </div>
   )
